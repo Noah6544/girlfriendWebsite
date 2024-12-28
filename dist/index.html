@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rest Well, Queen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+<style>
+    /* Define the animation */
+    @keyframes moveBackground {
+      0% {
+        background-position: 0% 0%;
+      }
+      100% {
+        background-position: 100% 100%;
+      }
+    }
+
+
+  </style>
+<body class=" w-3/4 justify-self-center bg-pink-200 flex flex-col items-center justify-center text-gray-800">
+  <!-- Header -->
+
+  <div class="text-center mb-8 h-screen justify-center flex flex-col">
+    <h1 class="text-7xl font-bold text-pink-700">Rest Well, Queen</h1>
+    <p class="text-lg mt-2 text-gray-600">A little something to make you smile :)</p>
+    <div class="mt-8 animate-bounce">
+      <svg class="w-10 h-10 text-pink-700 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Gallery -->
+  <div class="flex justify-center h-auto flex-wrap gap-12">
+    <!-- Add your images here -->
+    <img src="./images/image1.png" alt="Cute Image 1" class="border-gray-300 border-[5px] h-[250px] aspect-square object-cover fit rounded-lg drop-shadow-md animate-random">
+    <img src="./images/image3.png" alt="Cute Image 2" class="border-gray-300 border-[5px] h-[250px] aspect-square object-cover fit rounded-lg drop-shadow-md animate-random">
+    <img src="./images/image4.png" alt="Cute Image 3" class="border-gray-300 border-[5px] h-[250px] aspect-square object-cover fit rounded-lg drop-shadow-md animate-random">
+    <img src="./images/image5.png" alt="Cute Image 4" class="border-gray-300 border-[5px] h-[250px] aspect-square object-cover fit rounded-lg drop-shadow-md animate-random">
+    <img src="./images/image6.png" alt="Cute Image 5" class="border-gray-300 border-[5px] h-[250px] aspect-square object-cover fit rounded-lg drop-shadow-md animate-random">
+    <img src="./images/image7.png" alt="Cute Image 6" class="border-gray-300 border-[5px] h-[250px] aspect-square object-cover fit rounded-lg drop-shadow-md animate-random">
+    <img src="./images/image8.png" alt="Cute Image 7" class="border-gray-300 border-[5px] h-[250px] aspect-square object-cover fit rounded-lg drop-shadow-md animate-random">
+    <img src="./images/image9.png" alt="Cute Image 8" class="border-gray-300 border-[5px] h-[250px] aspect-square object-cover fit rounded-lg drop-shadow-md animate-random">
+    <img src="./images/image10.png" alt="Cute Image 9" class="border-gray-300 border-[5px] h-[250px] aspect-square object-cover fit rounded-lg drop-shadow-md animate-random">
+    <img src="./images/image11.png" alt="Cute Image 10" class="border-gray-300 border-[5px] h-[250px] aspect-square object-cover fit rounded-lg drop-shadow-md animate-random">
+    <img src="./images/image12.png" alt="Cute Image 11" class="border-gray-300 border-[5px] h-[250px] aspect-square object-cover fit rounded-lg drop-shadow-md animate-random">
+    <img src="./images/image13.png" alt="Cute Image 12" class="border-gray-300 border-[5px] h-[250px] aspect-square object-cover fit rounded-lg drop-shadow-md animate-random">
+    </div>
+
+  <!-- Footer -->
+  <footer class="p-16 mt-8 text-center text-gray-500">
+    Made with ❤️ for you<br>Your Loving Boyfriend,<br>- Noah씨 :D
+  </footer>
+</body>
+</html>
+<style>
+    .sparkle {
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: white;
+        border-radius: 50%;
+        animation: sparkle 5s infinite;
+    }
+
+    @keyframes sparkle {
+        0%, 100% {
+            opacity: 0;
+            transform: scale(0.5);
+        }
+        50% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const body = document.body;
+        for (let i = 0; i < 20; i++) {
+            const sparkle = document.createElement('div');
+            sparkle.style.cssText = "position: fixed; z-index: -1;";
+            sparkle.classList.add('sparkle');
+            sparkle.style.top = `${Math.random() * 100}vh`;
+            sparkle.style.left = `${Math.random() * 100}vw`;
+            sparkle.style.animationDuration = `${Math.random() * 5 + 5}s`;
+            body.appendChild(sparkle);
+        }
+    });
+</script>
